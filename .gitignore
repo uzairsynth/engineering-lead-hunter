@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------
+# Lead exports (contain scraped business emails and phone numbers)
+# The app's "Download" button saves engineering_business_leads.csv.
+# Never commit these. If you later add a non-personal demo fixture,
+# un-ignore it explicitly, e.g.  !tests/fixtures/demo_leads.csv
+# ---------------------------------------------------------------
+*.csv
+*.tsv
+*.xlsx
+*.xls
+engineering_business_leads*
+
+# ---------------------------------------------------------------
+# Secrets and local configuration
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------
+# Python bytecode, build artifacts and tool caches
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Logs
+# ---------------------------------------------------------------
+*.log
+
+# ---------------------------------------------------------------
+# Review copies left over from packaging (rename over the originals)
+# ---------------------------------------------------------------
+*.proposed
+
+# ---------------------------------------------------------------
+# OS and editor files
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
