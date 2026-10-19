@@ -2378,8 +2378,7 @@ if run_search:
 
 
         # ====================================================
-        # IMPORTANT FIX
-        # TEXT AND NUMBER COLUMNS ARE SEPARATE
+        # ENRICHMENT COLUMNS
         # ====================================================
 
         text_columns = [
@@ -2420,8 +2419,8 @@ if run_search:
             )
 
 
-        # Numeric column.
-        # This fixes your previous pandas error.
+        # Numeric column with an explicit dtype,
+        # so text values are never mixed into it.
 
         df[
             "Social Presence"
